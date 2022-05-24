@@ -50,11 +50,6 @@ nav {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.carousel-caption {
-    bottom: 15rem;
-    left: -20%;
-}
-
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
@@ -88,8 +83,8 @@ nav {
         font-size: 2rem;
     }
     .carousel-caption {
-        bottom: 8rem;
-        left: -20%;
+        bottom: 5rem;
+        left: 13%;
     }
 }
 
@@ -106,6 +101,10 @@ nav {
     #founderText {
         color: unset;
         background-color: unset;
+    }
+    .carousel-caption {
+        bottom: 16rem;
+        left: -20%;
     }
 }
 
