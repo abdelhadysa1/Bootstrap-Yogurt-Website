@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Yogurt Website</title>
-    <meta name="description" content="A website for a yogurt company.">
+    <title>Meat flavored yogurt - Dan's Meat-Flavored Yogurt Website.</title>
+    <meta name="description" content="Dan's meat yogurt website. A lot of other flavors available. Try our meat-flavored yogurt for free!">
     <!-- CSS Reset -->
     <link rel="stylesheet" href="reset.css">
     <!-- Bootstrap CSS -->
@@ -14,8 +14,133 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="sticky-top">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./img/logo-dans-meat-yogurt.svg" alt="Dan's meat-flavored yogurt logo" width="90px" class="align-text-center d-inline-block"> <span class="text-light">Dan's Yogurt</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle btn btn-outline-light text-light py-2 px-3 rounded-1 mx-2 text-uppercase" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Flavors
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Meat</a></li>
+                                <li><a class="dropdown-item" href="#">More Meat</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Even More Meat</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-outline-light text-light py-2 px-3 rounded-1 mx-2 text-uppercase" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- Hero -->
+        <main>
+            <div class="p-3 mb-1 text-light">
+                <div class="row">
+                    <div class="col-md-8 text-center text-md-start">
+                        <div class="container-fluid py-5">
+                            <h1 class="display-4 fw-600 hero-h1">Thick & Creamy</h1>
+                            <p class="lead fs-3">With real meat chunks</p>
+                            <button class="btn btn-outline-light py-2 rounded-1 mx-1 text-white text-uppercase btn-pricing" type="button">Pricing</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./img/hero1.png" alt="Yogurt hero image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Founder message -->
+        <div class="row">
+            <div class="col-md-4 px-0 px-md-2">
+                <img id="founderImg" src="./img/headshot-dan.jpg" alt="Meet Dan, the founder of Dan's Meat Yogurt Company" class="img-fluid">
+            </div>
+            <div id="founderText" class="col bg-light text-dark p-2 p-lg-4 d-flex flex-column align-content-center">
+                <h2 class="founder-h2" style="color: #00bbc9;">Message from our founder</h2>
+                <p class="lead founder-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora aperiam nam eaque maxime blanditiis exercitationem.</p>
+                <p class="lead founder-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur hic ipsum eius qui odit totam fugit non, excepturi voluptatem in!</p>
+            </div>
+        </div>
+        <!-- Carousel -->
+        <div id="yogurtCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/yogurt-1.png" data-bs-interval="5000" class="d-block w-100" alt="Yogurt preview image 01">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/yogurt-2.png" data-bs-interval="5000" class="d-block w-100" alt="Yogurt preview image 02">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/yogurt-3.png" data-bs-interval="5000" class="d-block w-100" alt="Yogurt preview image 03">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#yogurtCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#yogurtCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Cards -->
+        <div class="row d-flex justify-content-evenly">
+            <div class="col-lg-4 py-2">
+                <div class="card card-shadow">
+                    <img src="./img/product1.png" class="card-img-top" alt="Yogurt product meat 01">
+                    <div class="card-body">
+                        <h5 class="card-title display-6 display-md-5" style="color: #00f490;">Meat Flavor</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae minus soluta harum molestiae dignissimos libero magni nisi, suscipit magnam voluptatum.</p>
+                        <a href="#" class="btn btn-card stretched-link">Pricing</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 py-2">
+                <div class="card card-shadow">
+                    <img src="./img/product2.png" class="card-img-top" alt="Yogurt product meat 02">
+                    <div class="card-body">
+                        <h5 class="card-title display-6 display-md-5" style="color: #00f490;">Meat Flavor</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae minus soluta harum molestiae dignissimos libero magni nisi, suscipit magnam voluptatum.</p>
+                        <a href="#" class="btn btn-card stretched-link">Pricing</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 py-2">
+                <div class="card card-shadow">
+                    <img src="./img/product3.png" class="card-img-top" alt="Yogurt product meat 03">
+                    <div class="card-body">
+                        <h5 class="card-title display-6 display-md-5" style="color: #00f490;">Meat Flavor</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae minus soluta harum molestiae dignissimos libero magni nisi, suscipit magnam voluptatum.</p>
+                        <a href="#" class="btn btn-card stretched-link">Pricing</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container text-center py-2 text-light">
+                <p>(c) 2022 Dan's Yogurt. Designed by Abdelhady & Dan.</p>
+            </div>
+        </footer>
+    </div>
     <!-- Bootstrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="./js/nav-bg.js"></script>
 </body>
 </html>

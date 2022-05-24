@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+
+body {
+    background-color: #00bbc9;
+    background: linear-gradient(to bottom right, #00bbc9, #00f490);
+}
+
+nav {
+    transition: 1s background-color;
+}
+
+.nav-link:hover {
+    background-color: #00bbc9;
+}
+
+.hero-h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.btn-pricing {
+    padding: 0 30px;
+}
+
+.btn-pricing:hover {
+    background-color: #00bbc9;
+}
+
+.btn-card {
+    background-color: #00bbc9;
+    padding: 10px 15px;
+    color: white;
+    transition: 1s background-color;
+    text-transform: uppercase;
+}
+
+.btn-card:hover {
+    background-color: #00f490;
+}
+
+.card-shadow {
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.507);
+}
+
+.founder-p {
+    font-size: 1rem;
+}
+
+.founder-h2 {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Extra Small-Medium devices (small phones to tablets, between 576px-768px) */
+@media (min-width: 320px) and (max-width: 768px) {
+    .founder-h2 {
+        color: #00f490 !important;
+    }
+    #founderText {
+        color: #fff !important;
+        background-color: gray !important;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .founder-p {
+        font-size: 1.1rem;
+    }
+    .founder-h2 {
+        font-size: 1.9rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .founder-p {
+        font-size: 1.2rem;
+    }
+    .founder-h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .founder-p {
+        font-size: 1.3rem;
+        padding: 15px;
+    }
+    .founder-h2 {
+        font-size: 2.1rem;
+        padding: 15px;
+    }
+    #founderText {
+        color: unset;
+        background-color: unset;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .founder-p {
+        font-size: 1.4rem;
+        padding: 15px;
+    }
+    .founder-h2 {
+        font-size: 2.2rem;
+        padding: 15px;
+    }
+}
